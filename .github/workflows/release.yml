@@ -171,22 +171,11 @@ jobs:
         with:
           targets: "aarch64-apple-darwin"
 
-      - name: Enable devtools in tauri.conf.json
-        run: |
-          python3 -c "
-          import json
-          with open('src-tauri/tauri.conf.json') as f:
-            cfg = json.load(f)
-          cfg.setdefault('app', {}).setdefault('security', {})['devtools'] = True
-          with open('src-tauri/tauri.conf.json', 'w') as f:
-            json.dump(cfg, f, indent=2)
-          "
-
       - name: Install frontend dependencies
         run: npm install --ignore-scripts
 
-      - name: Build debug app
-        run: npx tauri build --debug --target aarch64-apple-darwin
+      - name: Build debug app with devtools
+        run: npx tauri build --debug --target aarch64-apple-darwin -- --features tauri/devtools
 
       - name: Upload .app as artifact
         uses: actions/upload-artifact@v5
