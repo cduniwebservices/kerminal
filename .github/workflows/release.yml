@@ -159,10 +159,10 @@ jobs:
     timeout-minutes: 40
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: "24"
 
@@ -189,7 +189,7 @@ jobs:
         run: npx tauri build --debug --target aarch64-apple-darwin
 
       - name: Upload .app as artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: Kerminal-Debug-aarch64-apple-darwin
           path: src-tauri/target/aarch64-apple-darwin/debug/bundle/dmg/*.dmg
