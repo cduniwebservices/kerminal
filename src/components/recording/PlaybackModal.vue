@@ -233,6 +233,6 @@ onUnmounted(() => {
 
 :deep(.timer) {
   color: rgb(156, 163, 175);
-  font-family: "FiraCode Nerd Font", "Menlo", monospace;
+  font-family: "JetBrains Mono NF", "Menlo", monospace;
 }
 </style>

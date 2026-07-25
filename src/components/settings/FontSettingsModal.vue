@@ -202,6 +202,16 @@
             </p>
           </div>
         </div>
+
+        <div class="text-xs text-gray-500 text-center pt-2 border-t border-gray-800">
+          For more Nerd Fonts visit
+          <a
+            href="https://www.nerdfonts.com/font-downloads"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-blue-400 hover:text-blue-300 underline underline-offset-2"
+          >nerdfonts.com</a>
+        </div>
       </div>
     </div>
 
@@ -292,7 +302,7 @@ const setPresetSize = async (size: number) => {
 // Reset to defaults
 const resetToDefaults = async () => {
   try {
-    await settingsStore.setFontFamily("FiraCode Nerd Font");
+    await settingsStore.setFontFamily("JetBrains Mono NF");
     await settingsStore.setFontSize(13);
     fontSizeValue.value = 13;
     message.success("Font settings reset to defaults");

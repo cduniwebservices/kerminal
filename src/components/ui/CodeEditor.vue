@@ -81,7 +81,7 @@ const editorOptions = computed(() => ({
   wrappingIndent: "indent",
   tabSize: 2,
   fontSize: 13,
-  fontFamily: "'FiraCode Nerd Font', 'Courier New', monospace",
+  fontFamily: "'JetBrains Mono NF', 'Courier New', monospace",
   scrollbar: {
     vertical: "auto",
     horizontal: "auto",

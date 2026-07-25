@@ -1,7 +1,41 @@
 @font-face {
   font-family: "FiraCode Nerd Font";
-
   src: url("../fonts/FiraCodeNerdFont.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetBrains Mono NF";
+  src: url("../fonts/JetBrainsMonoNF.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Caskaydia Cove NF";
+  src: url("../fonts/CaskaydiaCoveNF.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Monaspace Neon NF";
+  src: url("../fonts/MonaspaceNeonNF.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Maple Mono NF";
+  src: url("../fonts/MapleMonoNF.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ubuntu Mono NF";
+  src: url("../fonts/UbuntuMonoNF.ttf");
   font-weight: normal;
   font-style: normal;
 }

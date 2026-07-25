@@ -74,7 +74,7 @@ export const useSettingsStore = defineStore("settings", () => {
   const isLoading = ref(false);
 
   // Terminal font preferences
-  const fontFamily = ref<string>("FiraCode Nerd Font");
+  const fontFamily = ref<string>("JetBrains Mono NF");
   const fontSize = ref<number>(13);
   const useWebGLRenderer = ref<boolean>(getDefaultUseWebGLRenderer());
 

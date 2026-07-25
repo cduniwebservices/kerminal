@@ -247,7 +247,7 @@ watch(
   padding: 0.75rem; /* px-3 equivalent roughly */
   margin: 0;
   border: 0;
-  font-family: "FiraCode Nerd Font", "Courier New", monospace;
+  font-family: "JetBrains Mono NF", "Courier New", monospace;
   font-size: 13px;
   line-height: 1.5;
   tab-size: 2;

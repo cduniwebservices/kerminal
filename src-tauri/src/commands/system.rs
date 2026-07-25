@@ -99,16 +99,26 @@ pub fn get_system_fonts() -> Vec<String> {
         }
     }
 
-    // Always ensure FiraCode Nerd Font is available (bundled with app)
-    fonts.insert("FiraCode Nerd Font".to_string());
+    // Always ensure bundled fonts are available
+    let bundled_fonts = [
+        "JetBrains Mono NF",
+        "FiraCode Nerd Font",
+        "Caskaydia Cove NF",
+        "Monaspace Neon NF",
+        "Maple Mono NF",
+        "Ubuntu Mono NF",
+    ];
+    for font in &bundled_fonts {
+        fonts.insert(font.to_string());
+    }
 
     let mut font_list: Vec<String> = fonts.into_iter().collect();
     font_list.sort();
 
-    // Move FiraCode Nerd Font to the top of the list
-    if let Some(pos) = font_list.iter().position(|f| f == "FiraCode Nerd Font") {
-        let firacode = font_list.remove(pos);
-        font_list.insert(0, firacode);
+    // Move JetBrains Mono NF to the top of the list
+    if let Some(pos) = font_list.iter().position(|f| f == "JetBrains Mono NF") {
+        let font = font_list.remove(pos);
+        font_list.insert(0, font);
     }
 
     font_list
