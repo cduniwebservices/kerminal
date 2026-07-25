@@ -175,7 +175,7 @@ jobs:
         run: npm install --ignore-scripts
 
       - name: Build debug app with devtools
-        run: npx tauri build --debug --target aarch64-apple-darwin -- --features tauri/devtools
+        run: npx tauri build --debug --target aarch64-apple-darwin --bundles dmg -- --features tauri/devtools
 
       - name: Upload .app as artifact
         uses: actions/upload-artifact@v5
