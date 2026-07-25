@@ -56,7 +56,7 @@
               />
             </div>
             <h2
-              class="font-semibold text-white"
+              class="font-medium text-white"
               :class="isMobile ? 'text-base' : 'text-lg'"
             >
               {{ title }}

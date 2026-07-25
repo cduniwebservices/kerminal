@@ -44,7 +44,7 @@
     <div v-if="settingsStore.customThemes.length > 0" class="space-y-2 mb-6">
       <div class="flex items-center gap-2 px-2 py-1.5">
         <span
-          class="text-xs font-semibold text-gray-400 uppercase tracking-wider"
+          class="text-xs font-medium text-gray-400 uppercase tracking-wider"
         >
           Custom Themes
         </span>
@@ -144,7 +144,7 @@
     <div class="space-y-2">
       <div class="flex items-center gap-2 px-2 py-1.5">
         <span
-          class="text-xs font-semibold text-gray-400 uppercase tracking-wider"
+          class="text-xs font-medium text-gray-400 uppercase tracking-wider"
         >
           Built-in Themes
         </span>

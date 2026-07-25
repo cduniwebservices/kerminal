@@ -23,7 +23,7 @@
         :key="category"
         class="space-y-3"
       >
-        <h3 class="text-sm font-semibold text-gray-300 uppercase tracking-wide">
+        <h3 class="text-sm font-medium text-gray-300 uppercase tracking-wide">
           {{ category }}
         </h3>
 

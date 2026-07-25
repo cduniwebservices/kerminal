@@ -10,7 +10,7 @@
         <component v-if="icon" :is="icon" class="w-4 h-4 text-blue-400" />
         {{ label }}
       </label>
-      <span v-if="showValue" class="text-sm font-semibold text-blue-400">
+      <span v-if="showValue" class="text-sm font-medium text-blue-400">
         {{ modelValue }}{{ unit }}
       </span>
     </div>

@@ -15,7 +15,7 @@
 
     <!-- Content -->
     <div class="flex-1 min-w-0">
-      <div v-if="title" class="font-semibold text-sm text-white mb-1">
+      <div v-if="title" class="font-medium text-sm text-white mb-1">
         {{ title }}
       </div>
       <div class="text-sm text-gray-300 leading-5">{{ content }}</div>

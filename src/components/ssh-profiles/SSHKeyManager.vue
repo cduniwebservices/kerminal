@@ -50,7 +50,7 @@
             <!-- Header -->
             <div class="flex items-start justify-between">
               <div class="flex-1 min-w-0">
-                <h3 class="text-white font-semibold truncate">
+                <h3 class="text-white font-medium truncate">
                   {{ key.name }}
                 </h3>
                 <div class="flex items-center gap-2 mt-1">

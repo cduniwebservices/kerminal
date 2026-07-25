@@ -58,7 +58,7 @@
             <div class="flex items-start justify-between">
               <div class="flex-1 min-w-0">
                 <div class="flex items-center gap-2">
-                  <h3 class="text-white font-semibold truncate">
+                  <h3 class="text-white font-medium truncate">
                     {{ tunnel.name }}
                   </h3>
                   <TunnelStatusIndicator :status="tunnel.status" />

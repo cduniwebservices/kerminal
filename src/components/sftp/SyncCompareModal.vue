@@ -44,25 +44,25 @@
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
           <div class="p-3 bg-gray-900/50 rounded border border-gray-800">
             <div class="text-xs text-gray-500 mb-1">Only Local</div>
-            <div class="text-lg font-semibold text-blue-400">
+            <div class="text-lg font-medium text-blue-400">
               {{ summary.onlyLocal }}
             </div>
           </div>
           <div class="p-3 bg-gray-900/50 rounded border border-gray-800">
             <div class="text-xs text-gray-500 mb-1">Only Remote</div>
-            <div class="text-lg font-semibold text-green-400">
+            <div class="text-lg font-medium text-green-400">
               {{ summary.onlyRemote }}
             </div>
           </div>
           <div class="p-3 bg-gray-900/50 rounded border border-gray-800">
             <div class="text-xs text-gray-500 mb-1">Different</div>
-            <div class="text-lg font-semibold text-yellow-400">
+            <div class="text-lg font-medium text-yellow-400">
               {{ summary.different }}
             </div>
           </div>
           <div class="p-3 bg-gray-900/50 rounded border border-gray-800">
             <div class="text-xs text-gray-500 mb-1">Identical</div>
-            <div class="text-lg font-semibold text-gray-400">
+            <div class="text-lg font-medium text-gray-400">
               {{ summary.identical }}
             </div>
           </div>

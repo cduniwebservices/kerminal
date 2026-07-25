@@ -11,7 +11,7 @@
       <div class="flex justify-center mb-4">
         <CheckCircle2 class="w-16 h-16 text-green-500" />
       </div>
-      <h3 class="text-lg font-semibold text-white mb-2">
+      <h3 class="text-lg font-medium text-white mb-2">
         No Pending Conflicts
       </h3>
       <p class="text-sm text-gray-400">All sync conflicts have been resolved</p>
@@ -21,7 +21,7 @@
       <div class="flex items-center justify-between mb-4">
         <div class="flex items-center gap-2">
           <AlertTriangle class="w-5 h-5 text-yellow-500" />
-          <h3 class="text-base font-semibold text-white">Pending Conflicts</h3>
+          <h3 class="text-base font-medium text-white">Pending Conflicts</h3>
           <Badge variant="warning">{{ conflicts.length }}</Badge>
         </div>
         <Button

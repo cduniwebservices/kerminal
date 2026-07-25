@@ -54,7 +54,7 @@
         :class="isMobile ? 'py-3' : 'py-4'"
       >
         <h2
-          class="font-semibold"
+          class="font-medium"
           :class="isMobile ? 'text-xl mb-4' : 'text-2xl mb-6'"
         >
           System Information

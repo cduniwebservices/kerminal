@@ -13,7 +13,7 @@
         <template #header>
           <div class="flex items-center justify-between">
             <h3
-              class="text-base font-semibold text-white flex items-center gap-2"
+              class="text-base font-medium text-white flex items-center gap-2"
             >
               <Computer class="w-5 h-5" />
               Current Device
@@ -54,7 +54,7 @@
       <Card v-if="otherDevices.length > 0">
         <template #header>
           <div class="flex items-center justify-between">
-            <h3 class="text-base font-semibold text-white">Other Devices</h3>
+            <h3 class="text-base font-medium text-white">Other Devices</h3>
             <Button
               variant="ghost"
               size="sm"
@@ -117,14 +117,14 @@
       <!-- Statistics Section -->
       <Card v-if="devices.length > 0">
         <template #header>
-          <h3 class="text-base font-semibold text-white">Statistics</h3>
+          <h3 class="text-base font-medium text-white">Statistics</h3>
         </template>
 
         <div class="grid grid-cols-3 gap-4">
           <div
             class="bg-gray-800 rounded-lg p-4 border border-gray-700 text-center"
           >
-            <div class="text-2xl font-semibold text-gray-100">
+            <div class="text-2xl font-medium text-gray-100">
               {{ devices.length }}
             </div>
             <div class="text-xs text-gray-400 mt-1">Total Devices</div>
@@ -132,7 +132,7 @@
           <div
             class="bg-gray-800 rounded-lg p-4 border border-gray-700 text-center"
           >
-            <div class="text-2xl font-semibold text-green-400">
+            <div class="text-2xl font-medium text-green-400">
               {{ onlineDevicesCount }}
             </div>
             <div class="text-xs text-gray-400 mt-1">Online</div>
@@ -140,7 +140,7 @@
           <div
             class="bg-gray-800 rounded-lg p-4 border border-gray-700 text-center"
           >
-            <div class="text-2xl font-semibold text-gray-400">
+            <div class="text-2xl font-medium text-gray-400">
               {{ devices.length - onlineDevicesCount }}
             </div>
             <div class="text-xs text-gray-400 mt-1">Offline</div>

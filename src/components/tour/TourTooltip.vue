@@ -31,7 +31,7 @@
         </div>
 
         <!-- Title -->
-        <h3 class="text-lg font-semibold text-white mb-2">
+        <h3 class="text-lg font-medium text-white mb-2">
           {{ step.title }}
         </h3>
 

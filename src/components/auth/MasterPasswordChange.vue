@@ -11,7 +11,7 @@
         <div class="flex items-start gap-4">
           <Key :size="80" class="text-blue-400" />
           <div>
-            <h3 class="text-lg font-semibold text-gray-100 mb-1">
+            <h3 class="text-lg font-medium text-gray-100 mb-1">
               Update Security
             </h3>
             <p class="text-sm text-gray-400">
@@ -60,7 +60,7 @@
           <div class="flex items-start gap-3">
             <AlertTriangle :size="20" class="text-yellow-500 mt-0.5 shrink-0" />
             <div>
-              <h5 class="text-sm font-semibold text-yellow-400 mb-1">
+              <h5 class="text-sm font-medium text-yellow-400 mb-1">
                 Important Security Notice
               </h5>
               <p class="text-sm text-gray-300 mb-2">

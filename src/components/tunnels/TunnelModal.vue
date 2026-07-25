@@ -62,7 +62,7 @@
           >
             <div class="text-center">
               <div
-                class="font-semibold text-sm"
+                class="font-medium text-sm"
                 :class="
                   form.tunnelType === type.value
                     ? 'text-blue-400'
