@@ -32,15 +32,27 @@ body {
 
 :root {
   --ui-zoom: 1;
+  --page-zoom: 0.8;
+}
+
+html {
+  zoom: var(--page-zoom);
+}
+
+.topbar-container,
+.tabbar-root {
+  zoom: calc(1 / var(--page-zoom));
 }
 
 @media (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5) {
   :root {
     --ui-zoom: 1.2;
+    --page-zoom: 1.2;
   }
 
-  html {
-    zoom: var(--ui-zoom);
+  .topbar-container,
+  .tabbar-root {
+    zoom: 1;
   }
 
   .terminal-container {
