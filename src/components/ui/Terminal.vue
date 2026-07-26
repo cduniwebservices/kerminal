@@ -213,6 +213,7 @@ const terminalRef = ref<HTMLElement | null>(null);
 let term: Terminal;
 let fitAddon: FitAddon;
 let flowController: FlowController;
+let resizeObserver: ResizeObserver | null = null;
 
 const workspaceStore = useWorkspaceStore();
 const settingsStore = useSettingsStore();
@@ -725,6 +726,14 @@ onMounted(async () => {
 
   handleResize();
 
+  // Observe terminal container for size changes
+  if (terminalRef.value) {
+    resizeObserver = new ResizeObserver(() => {
+      handleResize();
+    });
+    resizeObserver.observe(terminalRef.value);
+  }
+
   // Initial focus with delay for mount animation
   focus({ delay: 100 });
 });
@@ -749,6 +758,11 @@ onBeforeUnmount(async () => {
     }
 
     inputBatcher.clearTerminal(props.backendTerminalId);
+  }
+
+  if (resizeObserver) {
+    resizeObserver.disconnect();
+    resizeObserver = null;
   }
 
   if (flowController) {

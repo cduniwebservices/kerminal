@@ -257,6 +257,8 @@ defineExpose({
   focusActiveTerminal,
 });
 
+let resizeObserver: ResizeObserver | null = null;
+
 // Handle resize
 const handleResize = debounce(() => {
   if (props.activeTerminalId) {
@@ -390,6 +392,14 @@ onMounted(async () => {
     window.addEventListener("focus", handleWindowFocus);
     window.addEventListener("resize", handleResize);
 
+    // Observe mount point size changes for reliable fitting
+    if (mountPointRef.value) {
+      resizeObserver = new ResizeObserver(() => {
+        handleResize();
+      });
+      resizeObserver.observe(mountPointRef.value);
+    }
+
     // Update unlisten to include cleanup
     const originalUnlisten = outputUnlisten;
     outputUnlisten = () => {
@@ -409,6 +419,11 @@ onBeforeUnmount(() => {
   // Unmount current terminal (move back to host)
   if (currentMountedId.value) {
     TerminalRegistry.unmountFromPanel(currentMountedId.value);
+  }
+
+  if (resizeObserver) {
+    resizeObserver.disconnect();
+    resizeObserver = null;
   }
 
   if (outputUnlisten) {
