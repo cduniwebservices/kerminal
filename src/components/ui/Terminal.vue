@@ -629,6 +629,8 @@ onMounted(async () => {
     rows: 30,
     fontFamily: `'${settingsStore.fontFamily}', monospace`,
     fontSize: settingsStore.fontSize,
+    fontWeight: 'normal',
+    fontWeightBold: 500,
     theme: theme,
   });
 
